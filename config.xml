@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/2.0"
+	id        = "com.bxo.data_tracker"
+	versionCode="01" 
+	version   = "2.0.0">
+    <name>Data_Tracker</name>
+    <description>A application which save your data and allow you to manage it.</description>
+    <author href="https://build.phonegap.com" email="goelvicky@gmail.com">Vikram Goel</author>
+	<preference name="phonegap-version" value="2.0.0" />
+	<preference name="orientation" value="portrait" />
+</widget>

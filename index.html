@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html manifest="tracker.appcache">
+	<head>
+		<meta charset="utf-8">
+		<title>Data Tracker</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<link rel="stylesheet" type="css/text" href="css/styles.css"/>
+		<link rel="stylesheet" type="css/text" href="css/menu.css"/>
+		<link rel="stylesheet" type="css/text" href="css/statusBar.css"/>
+		<link rel="stylesheet" type="css/text" href="css/longPress.css"/>
+		<script src="phonegap.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jQuery-Mobile.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/statusBar.js"></script>
+		<script src="js/tracker.js"></script>
+		<script type="text/javascript" src="js/saveItems.js"></script>
+	</head>
+	<body data-ajax="false">
+		<div class="statusBar">
+			<span></span>
+			<ul></ul>
+		</div>
+		<div id="main" data-role="none" data-url="none">
+			<header><span>Data Tracker</span>
+				<button data-role="none">+</button>
+			</header>
+			<nav>
+				<a href="#" id="mark" class="selected">Mark</a>
+				<a href="#" id="pallu">Pals</a>
+				<a href="#" id="others">Others</a>
+			</nav>
+			<section class="list">
+				<div class="mark">
+					<h4>Line Items for Mark</h4>
+					<ul></ul>
+				</div>
+				<div class="pallu" style="display:none;">
+					<h4>Line Items for Pals</h4>
+					<ul></ul>
+				</div>
+				<div class="others" style="display:none;">
+					<h4>Line Items for Others</h4>
+					<ul></ul>
+				</div>
+			</section>
+		</div>
+		<div class="addRec">
+			<ul class="input" data-role="none">
+				<li class="no">
+					<input type="radio" name="type" id="red" checked="checked" data-role="none"/>
+					<label for="red">Red</label>
+					<input type="radio" name="type" id="green" data-role="none"/>
+					<label for="green">Green</label>
+					<input type="radio" name="type" id="yellow" data-role="none"/>
+					<label for="yellow">Yellow</label>
+					<input type="radio" name="type" id="white" data-role="none"/>
+					<label for="white">white</label>
+				</li>
+				<li>
+					<textarea name="task" placeholder="Enter task" rows="5"></textarea>
+					<span class="reset">x</span>
+				</li>
+				<li class="no">
+					<input type="button" name="addItem" value="Add & Close" data-role="none"/>
+					<input type="button" name="addMore" value="Add More Item" data-role="none"/>
+				</li>
+			<!--	<li>
+					<input type="button" name="addMultipleTasks" value="Add Multiple Items" data-role="none"/>
+				</li>-->
+			</ul>
+		</div>
+		<div class="longPress">
+			<span class="close">x</span>
+			<span class="email"><a href="mailto:paramachandran@paypal.com?subject=Action Item&body=">Send Email</a></span>
+			<span class="sms">Send Sms<a href="#"></a></span>
+			<span class="edit">Edit Item</span>
+		</div>
+		<div class="contacts">
+			<h4>Choose a Contact</h4>
+			<p class="close">x</p>
+			<div class="input">
+				<input type="text" placeholder="Enter name"/>
+				<a href="#" class="send" data-role="none">></a>
+			</div>
+		</div>
+		<div id="menu">
+			<span id="clearSent">Clear sent</span>
+			<span id="emailTab"><a href="mailto:paramachandran@paypal.com?subject=Action Item&body=">Email tab</a></span>
+			<span id="clearTab">Clear tab</span>
+			<div>
+				<span id="refresh">Referesh</span>
+			</div>
+		</div>
+	</body>
+</html>

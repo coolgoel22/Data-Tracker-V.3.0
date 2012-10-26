@@ -1,0 +1,36 @@
+.statusBar{
+	/*display: none;*/
+	position: absolute;
+	width: 100%;
+	height: 0;
+	background-color: rgba(0,0,0,.7);
+	z-index: 9;
+	display: none;
+}
+.statusBar ul{
+	margin-top: 40px;
+}
+
+.statusBar span{
+	position: absolute;
+	border-width: 15px 0;
+	border-color: rgba(0,0,0,.6);
+	border-style: solid;
+	width: 100%;
+	bottom: 0;
+}
+.statusBar span:before{
+	position: absolute;
+	width: 10px;
+	height:10px;
+	border-radius: 5px;
+	background-color: #ddd;
+/*	border: 1px solid #336799;*/
+	content: "";
+	bottom: 0;
+	text-align: center;
+	margin: auto;
+	right: 50%;
+	margin-bottom: -5px;
+	z-index: 99;
+}

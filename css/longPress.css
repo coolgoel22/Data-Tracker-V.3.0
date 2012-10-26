@@ -1,0 +1,14 @@
+div.input{
+	margin-top: 36px;
+}
+div.input input{
+	width: 100%;
+	height: 40px;
+}
+a.send{
+	margin-top: -80px;
+	width: 60px;
+	height: 34px;
+	line-height: 32px;
+	border-radius: 5px;
+}

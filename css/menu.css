@@ -1,0 +1,27 @@
+#menu{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	height: 88px;
+	line-height: 44px;
+	color: white;
+	box-shadow: 0 -2px 14px #aaa;
+	display: none;
+}
+#menu div{
+	margin-top: -17px;
+}
+#menu span{
+	width: 32%;
+	text-align: center;
+	display: inline-table;
+	border-right: 1px solid #ccc;
+}
+#menu span:last-of-type{
+	border-right: none;
+}
+div span#refresh{
+	width: 100%;
+	border-top: 1px solid #ccc;
+}
