@@ -11,6 +11,7 @@ statusBar = {
 		$(".statusBar").animate({'height':'0'}, 400, function(){
 			$(".statusBar").hide();
 		});
+		$(".statusBar ul li").remove();
 		return false;
 	},
 	saveSendMessage: function($liArr){
@@ -26,6 +27,5 @@ statusBar = {
 			$(".statusBar ul li").remove();
 			$(".statusBar").hide();
 		}
-		
 	}
 };

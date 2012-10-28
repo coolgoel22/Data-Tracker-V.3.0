@@ -189,11 +189,11 @@ BXO.dataTracker = {
 				$(this).find(".btns span").show();
 				$(this).children("div.overlay, .btns").show();
 			}
-			var eleCol = this.className;
+			var eleCol = this.className.split(' ')[0];
 			$("span."+eleCol).hide();
 		},
 		changeStatus: function(){
-			var statusCol = this.className, 
+			var statusCol = this.className.split(' ')[0], 
 				$li = $(this).closest("li");
 			if(!$li.prev().hasClass(statusCol) && !$li.next().hasClass(statusCol) && $li.closest("ul").children("li."+statusCol).length!=0){
 				$li.insertAfter($("li."+statusCol+":last"));

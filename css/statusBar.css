@@ -1,16 +1,19 @@
 .statusBar{
-	/*display: none;*/
 	position: absolute;
 	width: 100%;
 	height: 0;
-	background-color: rgba(0,0,0,.7);
+	background-color: rgba(0,0,0,.8);
 	z-index: 9;
 	display: none;
+	color: #fff !important;
 }
-.statusBar ul{
-	margin-top: 40px;
+.statusBar h3{
+	margin: 0 auto;
+	background-color: rgba(0,0,0, 0.8);
+	height: 40px;
+	text-align: center;
+	line-height: 37px;
 }
-
 .statusBar span{
 	position: absolute;
 	border-width: 15px 0;
@@ -25,7 +28,6 @@
 	height:10px;
 	border-radius: 5px;
 	background-color: #ddd;
-/*	border: 1px solid #336799;*/
 	content: "";
 	bottom: 0;
 	text-align: center;
@@ -33,4 +35,34 @@
 	right: 50%;
 	margin-bottom: -5px;
 	z-index: 99;
+}
+.statusBar ul{
+	padding: 0;
+}
+.statusBar li{
+	background-color: #555;
+	border-radius: 0;
+	border-color: #999;
+}
+.statusBar li:after{
+	width: 20px;
+	height: 20px;
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	border-radius: 5px;
+}
+.statusBar li.yellow:after{
+	background-color: #ff0;
+}
+.statusBar li.red:after{
+	background-color: #f00;
+}
+.statusBar li.green:after{
+	background-color: #0f0;
+}
+.statusBar li.white:after{
+	background-color: #fff;
 }

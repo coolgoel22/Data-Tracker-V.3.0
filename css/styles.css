@@ -4,7 +4,7 @@ body{
 	/* Below line to avoid user select and unnecessay highlights
 	-webkit-user-select: none;*/
 	background-color: #85D0ED;
-	background-image: -webkit-linear-gradient(top, #F9F9F9 0%, #85D0ED 100%);
+	background-image: -webkit-linear-gradient(top, #F9F9F9 0%, rgb(169, 190, 229) 100%);
 	
 }
 body, header, ul, p{

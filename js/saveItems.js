@@ -28,6 +28,7 @@ store.local = {
 				}else{
 					var $li = $("<li class="+dataArr[i].class+" id="+ ++store.local.counter +">"+dataArr[i].text+"</li>");
 					$(".statusBar ul" ).append($li);
+					store.local.addItem($li, "sentElement");
 				}
 			}
 		}
