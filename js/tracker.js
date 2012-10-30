@@ -48,8 +48,8 @@ BXO.dataTracker = {
 		}
 		setTimeout(function(){
 		//	alert("hello");
-			navigator.notification.beep(10);
-			navigator.notification.alert("This is a test message", function(){alert("alert message");});
+			navigator.notification.beep(2);
+			navigator.notification.confirm("This is a test message", function(){alert("alert message");});
 		}, 3000);
 	},
 	touchStart: function(){
