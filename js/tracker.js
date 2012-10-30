@@ -46,9 +46,11 @@ BXO.dataTracker = {
 			store.local.createPage();
 			BXO.dataTracker.navigation.isLocalStorage.push(ID);
 		}
-		navigator.notification.beep(10);
-		navigator.notification.vibrate(10);
-		navigator.notification.alert("This is a test message", function(){alert("alert message");});
+		setTimeout(function(){
+		//	alert("hello");
+			navigator.notification.beep(10);
+			navigator.notification.alert("This is a test message", function(){alert("alert message");});
+		}, 3000);
 	},
 	touchStart: function(){
 		var $this = $(this);
